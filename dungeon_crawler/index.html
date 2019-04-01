@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang = 'en-US'>
+  <head>
+    <meta charset = "UTF-8">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body onload="navigation.initialize()">
+    <div id="game" class="screen">
+      <canvas id="tiles" width = "1000" height="1000"></canvas>
+      <canvas id="canvas-main" width = "1000" height = "1000"></canvas>
+      <canvas id="stats" width="1000" height="1000"></canvas>
+      <button onclick="game.saveGame()">Save Game</button>
+      <button id="quitGame">Exit to Menu</button>
+    </div>
+    <div id="menu" class="screen">
+      <h1>Dungeon Crawler</h1>
+      <button id="newGame">Start Game</button>
+      <button id="loadGame">Load Game</button>
+      <button id="toOptions">Options</button>
+      <button id="toAbout">About</button>
+      <button id="toHigh-scores">High Scores</button>
+    </div>
+    <div id="options" class="screen">
+      <h1>Options</h1>
+      <p>volume</p>
+      <input type="range"></input>
+      <p>Control Scheme:</p>
+      <div id="controls">
+        <div>
+          <p>Up:</p>
+          <p>Down:</p>
+          <p>Left:</p>
+          <p>Right:</p>
+          <p>Attack</p>
+        </div>
+        <div>
+          <button id="upControl"></button>
+          <button id="downControl"></button>
+          <button id="leftControl"></button>
+          <button id="rightControl"></button>
+          <button id="attackControl"></button>
+        </div>
+      </div>
+      <button id="options-menu">Menu</button>
+    </div>
+    <div id="about" class="screen">
+      <h1>About</h1>
+      <p>
+      This game was created by:<br />
+      Aaron Lam<br />
+      Jesse Jensen<br />
+      Kylie Williamson
+      </p>
+      <button id="about-menu">Menu</button>
+    </div>
+    <div id="high-scores" class="screen">
+      <h1>High Scores</h1>
+      <ul id= "id-scores">
+      </ul>
+      <button id="scores-menu">Menu</button>
+    </div>
+    <div id="levelUp" class="screen">
+      <div>
+        <h2>Choose One to Upgrade</h2>
+        <button id="attackUpgrade">Attack Power</button>
+        <button id="healthUpgrade">Health</button>
+        <button id="itemUpgrade">More items generated</button>
+      </div>
+    </div>
+    <div id="win" class="screen">
+      <h1>Congrats, you won!</h1>
+      <p id="win-score">Your score is :</p>
+      <button id="win-menu">Return to Menu</button>
+    </div>
+    <div id= "game-over" class="screen">
+      <h1>Game Over</h1>
+      <p id= "lose-score">You Scored: </p>
+      <button id="game-over-menu">Menu</button>
+      <button id= "game-over-to-scores">High Scores</button>
+    </div>
+    <script type="text/javascript" src = "http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="scripts/matter.js"></script>
+    <script src="scripts/memory.js"></script>
+    <script src="scripts/audio.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/input.js"></script>
+    <script src="scripts/quadTree.js"></script>
+    <script src="scripts/gameLoop.js"></script>
+    <script src="scripts/objectModels.js"></script>
+    <script src="scripts/graphics.js"></script>
+    <script src="scripts/particles.js"></script>
+    <script src="scripts/pots.js"></script>
+    <script src="scripts/maze.js"></script>
+    <script src="scripts/physics.js"></script>
+    <script src="scripts/AnimatedSprite.js"></script>
+    <script src="scripts/terrain.js"></script>
+    <script src="scripts/stats.js"></script>
+  </body>
+</html>
