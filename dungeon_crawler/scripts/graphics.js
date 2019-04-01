@@ -42,8 +42,8 @@ var graphics = (function(){
       size: 500,
       src0: "marsh background [www.imagesplitter.net]-",
       src1: "forestBackground [www.imagesplitter.net]-",
-      src2: "castle/castle [www.imagesplitter.net]-",
-      src3: "mountain/mountain [www.imagesplitter.net]-",
+      src2: "castle [www.imagesplitter.net]-",
+      src3: "mountain [www.imagesplitter.net]-",
       columns: 16,
       loaded: 0
     };
