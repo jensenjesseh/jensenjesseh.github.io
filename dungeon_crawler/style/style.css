@@ -1,0 +1,116 @@
+@font-face {
+    font-family: bit;
+    src: url('bit.ttf') format('truetype')
+}
+
+html{
+  height: 100%;
+}
+h1{
+  font-size: 48px;
+  font-family: bit;
+}
+
+body{
+  height: 95%;
+
+  background-color: rgb(77, 19, 0);
+  background-image: url('background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  display: flex;
+  align-items:  center;
+  justify-content: center;
+
+}
+canvas{
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 20px;
+}
+button{
+  font-size: 12px;
+  font-family: bit;
+  text-align: center;
+  border-radius: 8px;
+  padding: 14px 30px;
+  background-color: rgb(79, 108, 155);
+  color: white;
+  border: 2px solid rgb(3, 27, 66);
+  transition-duration: 0.4s;
+}
+button:hover {
+    background-color: white;
+    color: rgb(3, 27, 66);
+}
+button:active {
+  background-color: white;
+  color: rgb(3, 27, 66);
+  transform: translateY(4px);
+}
+
+.screen{
+  display: none;
+  text-align: center;
+}
+
+.active{
+  display: block;
+}
+
+#game button{
+  position: relative;
+  left: 400px;
+  display: block;
+  top: -245px;
+}
+
+#controls{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#controls div{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin: 5px;
+}
+
+#controls p{
+  margin: 13px;
+}
+
+#levelUp div{
+  display: flex;
+  flex-direction: column;
+}
+
+button:disabled,
+button[disabled]{
+  color: black;
+  background-color: gray;
+}
+
+#id-scores{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+ul{
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    list-style-type: none;
+}
