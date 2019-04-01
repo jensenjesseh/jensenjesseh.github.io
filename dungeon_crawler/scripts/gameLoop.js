@@ -370,7 +370,6 @@ var game = (function(){
           that.level++;
         }else{
           navigation.showScreen('win');
-          addScore(score);
           document.getElementById("win-score").innerHTML = "You Scored " + score + " points";
         }
         that.quit();
@@ -378,7 +377,6 @@ var game = (function(){
     }
      if(character.isDead){
        that.quit();
-       addScore(score);
        navigation.showScreen('game-over');
        document.getElementById("lose-score").innerHTML = "You Scored " + score + " points";
      }
