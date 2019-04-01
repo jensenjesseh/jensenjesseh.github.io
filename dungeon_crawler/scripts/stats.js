@@ -36,7 +36,7 @@ var Stats = (function(){
         //load imaged
         for(let i = 0; i <= 5; i++){
           let nextImg = new Image();
-          nextImg.src = 'assets/healthBar' + i + '-5.png';
+          nextImg.src = 'healthBar' + i + '-5.png';
           healthImg.push(nextImg);
         }
 
