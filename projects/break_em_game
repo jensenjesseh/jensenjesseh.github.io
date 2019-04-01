@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+<head>
+	<meta charset = "UTF-8">
+	<title>Break Out</title>
+
+    <link rel = "stylesheet" type = "text/css" href = "breakSheet.css">
+</head>
+<body onload = "Navigate.initialize()">
+<div id = "main-menu" class = "screen">
+    <h1 id = "title">Break 'em</h1>
+    <div id = "menu">
+    <div id = "newButt">
+    <button id = "new-game">New Game</button>
+    </div>
+    <br>
+    <div>
+    <button id = "high-score">High Scores</buttion>
+    </div>
+    <br>
+    <div>
+    <button id = "credit">Credits</button>
+    </div>
+    </div>
+    </div>
+<div id = "game" class = "screen">
+     <div>
+    <button id = "back">Main Menu</button>
+    </div>
+    <div id = "Score">Score: </div>
+    <div id = "score">
+    </div>
+	<canvas id = "canvas-main" width = "1250" height = "500"></canvas>
+   
+</div>
+
+<div id = "high-scores" class = "screen">
+    <h1>High Scores</h1>
+    <ol>
+        <li><span id = "First"></span></li>
+        <li><span id = "Second"></span></li>
+        <li><span id = "Third"></span></li>
+        <li><span id = "Fourth"></span></li>
+        <li><span id = "Fifth"></span></li>
+    </ol>
+    <button id = "Back">Main Menu</button>
+</div>
+
+<div id = "credits" class = "screen">
+    <h1>Credits</h1>
+    <p>Made By: </p>
+    <p>Jesse Jensen</p>
+    <p>CS 5410</p>
+    <p>22 March, 2017</p>
+    <button id = "goBack">Main Menu</button>
+</div>
+
+
+    <script src = "breakInit.js"></script>
+    <script src = "navigatePage.js"></script>
+    <script src = "pictureParticles.js"></script>
+    <script src = "random.js"></script>
+    <script src = "breakRender.js"></script>
+    <script src = "highScores.js"></script>
+    <script src = "detectionTests.js"></script>
+    <script src = "gameLoop.js"></script>
+</body>
+</html>
