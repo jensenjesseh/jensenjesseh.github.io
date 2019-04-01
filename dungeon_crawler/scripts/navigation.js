@@ -169,7 +169,7 @@ navigation.screens['about'] = function(){
 navigation.screens['high-scores'] = function(){
   let that = {};
   that.initialize = function(){
-    showScores();
+    //showScores();
     document.getElementById('scores-menu').addEventListener('click', function() {
       navigation.showScreen('menu');
     });
