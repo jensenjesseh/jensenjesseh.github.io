@@ -40,10 +40,10 @@ var graphics = (function(){
 
     tiles = {
       size: 500,
-      src0: "assets/map/marsh background [www.imagesplitter.net]-",
-      src1: "assets/map/forestBackground [www.imagesplitter.net]-",
-      src2: "assets/map/castle/castle [www.imagesplitter.net]-",
-      src3: "assets/map/mountain/mountain [www.imagesplitter.net]-",
+      src0: "marsh background [www.imagesplitter.net]-",
+      src1: "forestBackground [www.imagesplitter.net]-",
+      src2: "castle/castle [www.imagesplitter.net]-",
+      src3: "mountain/mountain [www.imagesplitter.net]-",
       columns: 16,
       loaded: 0
     };
