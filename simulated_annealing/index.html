@@ -10,4 +10,10 @@ title: 'Simulated Annealing'
       <p>The annealing algorithm first sets an initial "temperature". Then, it computes a 'score' based on the initial solution. The current solution is then copied into a 'next' solution. This next solution is altered slightly using random values to search through other possible placements. The score of a solution using this next value is then computed and, if the score is better, the current solution is replaced with the 'next' placement. Otherwise, the current solution is only replaced if a random number is less than e^(-dE/T). Once this is completed, the temperature is reduced by a constant scalar and the loop repeats. This process continues until the temperature lowers below the defined threshold of 0.001. </p>
       <p>The simulated annealing process is a greedy algorithm with a limited amount of random variation to allow for a more optimal solution to be found.</p>
       <p>Note: While the solution this process finds is an optimal solution, it is not necessarily the most optimal. This process instead finds a 'good enough' solution in a reasonable amount of time rather than searching for the most NP-Complete optimal solution</p>
+      <p> </p>
+      <p> </p>
+      <p> Results: </p>
+      <p> The solution computed is as intended. It is far better than the original solution. Due to the random nature of the process, the computed solution is not the same each time the program runs. Depending on the temperature threshold that is used, a more and more optimal solution can be found at the expense of time to compute.</p>
+      <p> Figure 1.1 shows the initial score along with how many times the annealing loop ran. Figure 1.2 shows the final score after the algorithm has completed. </p>
+
  </div><!-- /.projectList -->
