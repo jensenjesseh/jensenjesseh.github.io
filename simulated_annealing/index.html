@@ -1,0 +1,13 @@
+---
+layout: default
+title: 'Simulated Annealing'
+---
+
+ <div class="projectList">     
+      <h1>Place and Route Using Simulated Annealing</h1>
+      <p>This project uses simulated annealing to solve the place and route problem for mapping an FPGA board. The objective of this project is to find a solution to the place and route problem that minimizes the distance between any two vertices (essentially the travelling salesman problem)></p>
+      <p>Given an input file with a grid size, the number of vertices to be placed, and a list of required edges between nodes, this program finds a solution to minimize the distance between vertices. It does so by finding an initial (unoptimized) solution and then improving the result with an annealing algorithm.</p>
+      <p>The annealing algorithm first sets an initial "temperature". Then, it computes a 'score' based on the initial solution. The current solution is then copied into a 'next' solution. This next solution is altered slightly using random values to search through other possible placements. The score of a solution using this next value is then computed and, if the score is better, the current solution is replaced with the 'next' placement. Otherwise, the current solution is only replaced if a random number is less than e^(-dE/T). Once this is completed, the temperature is reduced by a constant scalar and the loop repeats. This process continues until the temperature lowers below the defined threshold of 0.001. </p>
+      <p>The simulated annealing process is a greedy algorithm with a limited amount of random variation to allow for a more optimal solution to be found.</p>
+      <p>Note: While the solution this process finds is an optimal solution, it is not necessarily the most optimal. This process instead finds a 'good enough' solution in a reasonable amount of time rather than searching for the most NP-Complete optimal solution</p>
+ </div><!-- /.projectList -->
