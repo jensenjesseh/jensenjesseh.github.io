@@ -1,0 +1,27 @@
+---
+layout: default
+title: 'Real-time Raytracer'
+---
+
+ <div class="raytracer">     
+      <h1>Real-time Ray-tracer with OpenGL</h1>
+      <p>This ray tracer runs in real-time using OpenGL and the GLSL shading language to execute the code on the GPU which is what allows the rendering to happen in real-time.</p>
+      <p>This WebGL project has the following characteristics:</p>
+      <p>
+          <ul>
+            <li>Rendering is performed using a recursive ray-tracer, bootstrapped on top of OpenGL as the rasterization/execution framework</li>
+            <li>Renders a plane that represents the horizon</li>
+            <li>Renders three spheres: One sphere is diffuse and specular, one is reflective, and one is 80% diffuse/specular and 20% reflective</li>
+            <li>Renders a "sky" when no other object is intersected by the pixel ray by defining a large sphere to encompass the entire scene</li>
+            <li>Uses shadow rays to determine if a point is illuminated</li>
+          </ul></p>
+          
+       <h2>Notes about this project:</h2>
+       <p>While this ray-tracer uses recursion to function, recursion is not supported by WebGL. To get around this, a GLSL stack is used to iteratively perform recursive functions.</p>
+
+      <p>A video of the program can be viewed below.</p>
+      <p> <video width="960" height="520" controls>
+            <source src="movie2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></p>
+ </div><!-- /.raytracer -->
